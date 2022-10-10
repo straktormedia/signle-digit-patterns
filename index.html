@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Digit Patterns</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container__title">
+        <p>
+          This <span class="pattern">pattern</span> is created by adding each
+          result's digits with each other until we get a single-digit number.
+          (Multiplication and Power)<br />
+          <p>Choose Number</p>
+          <input class="input--number" />
+        </p>
+        <p></p>
+        <button class="btn">GO</button>
+      </div>
+      <div class="container__outputs">
+        <div class="output multiplication-results"></div>
+        <div class="output pattern multiplication-pattern"></div>
+        <div class="output power-results"></div>
+        <div class="output pattern power-pattern"></div>
+      </div>
+      <button class="view view-circles">View Circles</button>
+    </div>
+    <!-- Attaches canvasSketch to window global -->
+    <script src="https://unpkg.com/canvas-sketch@latest/dist/canvas-sketch.umd.js"></script>
+
+    <!-- <script src="script.js"></script> -->
+
+    <script src="script-canvas.js"></script>
+  </body>
+</html>
